@@ -75,7 +75,7 @@
                 <!-- Partition -->
                 <div v-show="cluster_name" id="partitions-group" class="form-group">
                     <label class="control-label">Partition: {{ partition_name }}</label>
-                    <select v-model="partition_name" v-on:input="selectPartition()" id='partition-select'
+                    <select v-model="partition_name" v-on:change="selectPartition()" id='partition-select'
                         class="form-control">
                         <option disabled value="">Please select a partition</option>
                     </select>
